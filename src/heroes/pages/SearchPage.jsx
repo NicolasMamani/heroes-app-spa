@@ -5,7 +5,6 @@ import { getHeroesByName } from "../helpers";
 import { HeroCard } from "../components/HeroCard";
 
 export const SearchPage = () => {
-
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -14,7 +13,7 @@ export const SearchPage = () => {
 
   const heroes = getHeroesByName(q);
 
-
+  
   const {searchText, onInputChange}=useForm({
      searchText: q
    });
